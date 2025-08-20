@@ -19,15 +19,6 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="bluetooth"
-        options={{
-          title: 'Bluetooth',
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons name={focused ? 'bluetooth' : 'bluetooth-outline'} color={color} size={24} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="about"
         options={{
           title: 'About',

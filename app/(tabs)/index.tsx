@@ -1,11 +1,11 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import GqlPostsList from '../../components/GqlPostsList';
+import PostsList from '../../components/PostsList';
 
 export default function Index() {
   return (
     <View style={styles.container}>
-      <GqlPostsList />
+      <PostsList />
     </View>
   );
 }
