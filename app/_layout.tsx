@@ -1,9 +1,13 @@
 import { Stack } from 'expo-router';
+import { ApolloProvider } from '@apollo/client';
+import { apolloClient } from '../lib/apolloClient';
 
 export default function RootLayout() {
   return (
-    <Stack>
-      <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-    </Stack>
+    <ApolloProvider client={apolloClient}>
+      <Stack>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+      </Stack>
+    </ApolloProvider>
   );
 }
